@@ -31,7 +31,7 @@
 
             <div class="col-md-3">
                 Nuevo apellido
-                <input type="text" class="form-control" ng-model="mac.nuevoApellido">
+                <input type="text" class="form-control" ng-model="mac.nuevoApellido" my-enter="mac.agregarApellido()">
             </div>
             <div class="col-md-1 pt-4">
                 <button class="btn btn-primary" ng-click="mac.agregarApellido()">Agregar</button>
@@ -54,11 +54,11 @@
         </div>
 
         <div class="row">
-            <div class="col-4">
-                <input type="text"  class="form-control" ng-model="gac.busqueda" placeholder="Busca un gif...">
+            <div class="col-8 col-md-4">
+                <input type="text"  class="form-control" ng-model="gac.busqueda" my-enter="gac.buscarGifs()" placeholder="Busca un gif...">
             </div>
             <div class="col-4">
-                <button class="btn btn-sm btn-primary" ng-click="gac.buscarGifs()">Buscar</button>
+                <button class="btn btn-primary" ng-click="gac.buscarGifs()">Buscar</button>
             </div>
         </div>
         <div class="row my-4">
@@ -68,6 +68,8 @@
                 </div>
             </div>
         </div>
+
+        <div ng-notification></div>
     </div>
     <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.5.8/angular-route.js"></script>

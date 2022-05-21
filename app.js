@@ -48,8 +48,19 @@ app.controller("nombresAppController", function(){
             gac.resultados = resp.data;
         });
     };
-});
-
+})
+.directive('myEnter', function () {
+    return function (scope, element, attrs) {
+        element.bind("keydown keypress", function (event) {
+            if(event.which === 13) {
+                scope.$apply(function (){
+                    scope.$eval(attrs.myEnter);
+                });
+                event.preventDefault();
+            }
+        });
+    };
+});;
 
 const HttpParams = (data)=>{
     const ret = [];
