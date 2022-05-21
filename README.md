@@ -5,3 +5,5 @@ En mi trayectoria he aprendido que muchas de las tecnologías que se han quedado
 
 #### ¿Cómo llegó a ser Angular lo que es hoy?
 Sin duda primero tuvo que pasar por diferentes transformaciones en la versión 1, desde estas versiones se aprecia muy bien cómo funciona la velocidad de respuesta que trae el DOM en la vista de la página.
+
+[https://eedygarcia.github.io/practicas-angularJSv1.5.8/](https://eedygarcia.github.io/practicas-angularJSv1.5.8/)
